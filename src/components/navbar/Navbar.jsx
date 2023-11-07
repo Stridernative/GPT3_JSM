@@ -5,7 +5,6 @@ import './navbar.css'
 
 // BEM --> Block Element Modifier
 
-
 const Menu = () => (
   <>
   <p><a href="#home">Home</a></p>
@@ -38,15 +37,15 @@ const Navbar = () => {
         }
 
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
+        <div className="gpt3__navbar-menu_container scale-up-center">
           <div className="gpt3__navbar-menu_container-links">
-          <Menu />
-         </div>
-          <div className="gpt3__navbar-menu_container-links-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
+            <Menu />
+            <div className="gpt3__navbar-menu_container-links-sign">
+              <p>Sign in</p>
+              <button type="button">Sign up</button>
             </div>
           </div>
+        </div>
             )}
       </div>
     </div>
